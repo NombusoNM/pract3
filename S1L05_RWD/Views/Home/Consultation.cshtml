@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Consultation";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Book a consultation with your Lecturer.</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Adjust width for better alignment -->
+            <form>
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <div class="row mb-3">
+                        <!-- First Name -->
+                        <div class="col-md-6">
+                            <label for="firstname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Nombuso" required>
+                            <div class="invalid-feedback">Please enter your first name.</div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-md-6">
+                            <label for="lastname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Mdletshe" required>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="nombuso@gmail.com" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Type your comments here..."></textarea>
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <style>
+                        .btn {
+                            background-color: hotpink;
+                            color: white;
+                            transition: background-color 0.3s ease;
+                        }
+
+                            .btn:hover {
+                                background-color: lightpink;
+                                color: black;
+                            }
+                    </style>
+
+                    <button type="submit" class="btn">Submit</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
